@@ -1,6 +1,6 @@
 # Multiplication Table Generator
 
-![Multiplication Table Generator](https://raw.githubusercontent.com/harsh98trivedi/Multiplication-Table-Generator/master/meta.jpg)
+[![Multiplication Table Generator](https://raw.githubusercontent.com/harsh98trivedi/Multiplication-Table-Generator/master/meta.jpg)](https://harsh98trivedi.github.io/Multiplication-Table-Generator/)
 
 The Multiplication Generator is a user-friendly web application that allows users to generate multiplication tables based on a number of their choice. Users simply enter a number, and the application generates a multiplication table from 1 to 10, displaying the results in an easy-to-read format. The website provides a clean and intuitive interface, making it convenient for users to generate and view multiplication tables for various numbers. It is a helpful tool for students, teachers, or anyone looking to practice or explore multiplication concepts.
 
