@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <meta name="title" content="Multiplication Table Generator">
+  <meta name="description"
+    content="The Multiplication Table Generator is a user-friendly web application that allows users to generate multiplication tables based on a number of their choice. Users simply enter a number, and the application generates a multiplication table from 1 to 10, displaying the results in an easy-to-read format. The website provides a clean and intuitive interface, making it convenient for users to generate and view multiplication tables for various numbers. It is a helpful tool for students, teachers, or anyone looking to practice or explore multiplication concepts.">
+  <meta name="keywords" content="multiplication, table-generator, table, pahada, multiplication-table-generator">
+  <meta name="image"
+    content="https://raw.githubusercontent.com/harsh98trivedi/Multiplication-Table-Generatror/master/meta.jpg">
+
+  <!-- Open Graph general (Facebook, Pinterest) -->
+  <meta name="og:title" content="Multiplication Table Generator">
+  <meta name="og:description"
+    content="The Multiplication Table Generator is a user-friendly web application that allows users to generate multiplication tables based on a number of their choice. Users simply enter a number, and the application generates a multiplication table from 1 to 10, displaying the results in an easy-to-read format. The website provides a clean and intuitive interface, making it convenient for users to generate and view multiplication tables for various numbers. It is a helpful tool for students, teachers, or anyone looking to practice or explore multiplication concepts.">
+  <meta name="og:image"
+    content="https://raw.githubusercontent.com/harsh98trivedi/Multiplication-Table-Generatror/master/meta.jpg">
+  <meta name="og:image:alt" content="Multiplication Table Generator">
+  <meta name="og:site_name" content="Multiplication Table Generator">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Multiplication Table Generator">
+  <meta name="twitter:description"
+    content="The Multiplication Table Generator is a user-friendly web application that allows users to generate multiplication tables based on a number of their choice. Users simply enter a number, and the application generates a multiplication table from 1 to 10, displaying the results in an easy-to-read format. The website provides a clean and intuitive interface, making it convenient for users to generate and view multiplication tables for various numbers. It is a helpful tool for students, teachers, or anyone looking to practice or explore multiplication concepts.">
+  <meta name="twitter:image:src"
+    content="https://raw.githubusercontent.com/harsh98trivedi/Multiplication-Table-Generatror/master/meta.jpg">
+
+  <!-- Search Engine -->
+  <meta name="description"
+    content="The Multiplication Table Generator is a user-friendly web application that allows users to generate multiplication tables based on a number of their choice. Users simply enter a number, and the application generates a multiplication table from 1 to 10, displaying the results in an easy-to-read format. The website provides a clean and intuitive interface, making it convenient for users to generate and view multiplication tables for various numbers. It is a helpful tool for students, teachers, or anyone looking to practice or explore multiplication concepts.">
+  <meta name="image"
+    content="https://raw.githubusercontent.com/harsh98trivedi/Multiplication-Table-Generatror/master/meta.jpg">
+
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Multiplication Table Generator">
+  <meta itemprop="description"
+    content="The Multiplication Table Generator is a user-friendly web application that allows users to generate multiplication tables based on a number of their choice. Users simply enter a number, and the application generates a multiplication table from 1 to 10, displaying the results in an easy-to-read format. The website provides a clean and intuitive interface, making it convenient for users to generate and view multiplication tables for various numbers. It is a helpful tool for students, teachers, or anyone looking to practice or explore multiplication concepts.">
+  <meta itemprop="image"
+    content="https://raw.githubusercontent.com/harsh98trivedi/Multiplication-Table-Generatror/master/meta.jpg">
+
+  <meta name="revisit-after" content="150 days">
+
+  <style>
+    .table-container {
+      max-width: 400px;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #FFFFFF;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .table-container table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .table-container table th,
+    .table-container table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #E5E7EB;
+    }
+
+    .table-container table th {
+      background-color: #F3F4F6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 grid place-content-center justify-center min-h-screen px-3">
+  <div class="table-container text-center">
+    <h1 class="text-2xl font-bold mb-6">Multiplication Table Generator</h1>
+    <label class="block mb-2" for="number">Enter a number:</label>
+    <input class="border border-gray-300 rounded px-3 py-2 mb-4 w-full" type="number" id="number" name="number"
+      onkeyup="generateTable()" autofocus>
+    <button class="bg-black text-white py-2 px-4 rounded hover:bg-blue-600" onclick="generateTable()">Generate
+      Table</button>
+    <div id="table-container" class="mt-4"></div>
+
+    <script src="script.js"></script>
+  </div>
+  <p class="mx-auto my-5">Made with <i class="fa-solid fa-heart text-red-600"></i> by <a
+      href="https://htlink.netlify.app/" target="_blank"><strong class="underline text-blue-600">Harsh
+        Trivedi</strong></a></p>
+</body>
+
+</html>
