@@ -1,9 +1,9 @@
 function generateTable() {
   let numberInput = document.getElementById("number");
-  let number = parseInt(numberInput.value);
+  let number = parseFloat(numberInput.value);
 
   if (isNaN(number) || !numberInput.value) {
-    number = 1;
+    number = 1.0;
   }
 
   let tableContainer = document.getElementById("table-container");
